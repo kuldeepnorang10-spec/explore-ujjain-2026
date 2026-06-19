@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore Ujjain – Premium Mahakaleshwar Pilgrimage Tours, Bhasma Aarti, VIP Darshan & Pan-India Prasad Delivery. Jai Shri Mahakal.">
+<title>Explore Ujjain – Jai Shri Mahakal 🕉️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<style>
+/* ═══════════════════════════════════════════════════════
+   DESIGN TOKENS — Spiritual Luxury Palette
+═══════════════════════════════════════════════════════ */
+:root{
+  --bg:#FAFAF7; --bg-warm:#F4EAD0; --bg-deep:#EEE0C0;
+  --saffron:#C45B1A; --saffron-lt:#E07B3A;
+  --gold:#9E7B1A; --gold-lt:#C9A227;
+  --vermilion:#8B1A1A;
+  --text:#1C1C1C; --text-muted:#6B6B6B; --text-lt:#9A9A9A;
+  --border:#E0D5BF; --white:#FFFFFF;
+  --font-serif:'Playfair Display',Georgia,serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --font-quote:'Cormorant Garamond',Georgia,serif;
+  --sp-xs:.5rem; --sp-sm:.75rem; --sp-md:1.25rem;
+  --sp-lg:2rem; --sp-xl:3.2rem; --sp-2xl:5.2rem; --sp-3xl:8rem;
+  --r-sm:4px; --r-md:8px; --r-lg:16px;
+  --sh-soft:0 4px 24px rgba(0,0,0,.06);
+  --sh-md:0 8px 40px rgba(0,0,0,.10);
+  --sh-lg:0 16px 60px rgba(0,0,0,.14);
+  --tr:.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+/* Smooth Scroll */
+html.lenis { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+body{
+    font-family:var(--font-body);
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+    overflow-x:hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Premium Noise Texture */
+.noise-overlay {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+  pointer-events: none; z-index: 9999; opacity: 0.04;
+  background-image: url('data:image/svg+xml;utf8,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E');
+}
+
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+ul{list-style:none}
+.container{max-width:1200px;margin:0 auto;padding:0 var(--sp-lg)}
+.sec{padding:var(--sp-3xl) 0}
+.sec-warm{background:var(--bg-warm)}
+.sec-deep{background:var(--bg-deep)}
+
+/* TYPOGRAPHY */
+h1,h2,h3,h4{font-family:var(--font-serif);line-height:1.2;letter-spacing:-.01em}
+.eyebrow{font-family:var(--font-body);font-size:.75rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--saffron)}
+.sec-title{font-family:var(--font-serif);font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:600}
+.sec-sub{color:var(--text-muted);font-size:1rem;margin-top:var(--sp-sm);max-width:560px;margin-left:auto;margin-right:auto}
+.sec-head{text-align:center;margin-bottom:var(--sp-2xl)}
+.q-italic{font-family:var(--font-quote);font-style:italic;color:var(--saffron);line-height:1.5}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border-radius:var(--r-md);font-size:.875rem;font-weight:600;transition:var(--tr);min-height:44px;font-family:var(--font-body);cursor:pointer}
+.btn-saffron{background:var(--saffron);color:#fff}
+.btn-saffron:hover{background:var(--vermilion);transform:translateY(-2px);box-shadow:0 8px 24px rgba(196,91,26,.3)}
+.btn-outline{border:1.5px solid var(--saffron);color:var(--saffron)}
+.btn-outline:hover{background:var(--saffron);color:#fff}
+.btn-lg{padding:14px 30px;font-size:.95rem;min-height:52px}
+.btn-white{background:#fff;color:var(--saffron)}
+.btn-white:hover{background:var(--bg-warm);transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.2)}
+
+.reveal { opacity: 0; visibility: hidden; }
+
+/* SHARED REALISTIC IMAGE STYLES */
+.real-img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1); background: var(--bg-deep); }
+.icon-img-box { width: 64px; height: 64px; border-radius: var(--r-md); overflow: hidden; flex-shrink: 0; background: var(--bg-deep); box-shadow: var(--sh-soft); display:flex; align-items:center; justify-content:center;}
+.icon-img-box img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ═══════════════════════════════════════
+   1. TOP TICKER
+═══════════════════════════════════════ */
+.ticker-bar{background:var(--saffron);color:#fff;padding:7px 0;overflow:hidden;font-size:.78rem;font-weight:500}
+.ticker-inner{display:flex;align-items:center;gap:var(--sp-lg)}
+.ticker-label{flex-shrink:0;background:rgba(0,0,0,.15);padding:2px 12px;border-radius:20px;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.ticker-scroll{overflow:hidden;flex:1}
+.ticker-content{display:flex;gap:60px;white-space:nowrap;animation:tick 50s linear infinite}
+.ticker-content span{flex-shrink:0}
+.ticker-content span::before{content:'🕉 ';margin-right:4px}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ═══════════════════════════════════════
+   2. HEADER / NAV
+═══════════════════════════════════════ */
+.header{position:sticky;top:0;z-index:1000;background:rgba(255, 255, 255, 0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:var(--tr)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:var(--sp-md)}
+.logo{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.logo-icon{width:42px;height:42px;background:linear-gradient(135deg,var(--saffron),var(--gold));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff;flex-shrink:0}
+.logo-text{display:flex;flex-direction:column;line-height:1}
+.logo-name{font-family:var(--font-serif);font-size:1.05rem;font-weight:700;color:var(--saffron)}
+.logo-sub{font-size:.6rem;color:var(--text-muted);letter-spacing:.1em;text-transform:uppercase;margin-top:2px}
+.nav-links{display:flex;align-items:center;gap:var(--sp-xl)}
+.nav-links a{font-size:.85rem;font-weight:500;position:relative;transition:color .2s}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--saffron);transition:width .3s}
+.nav-links a:hover{color:var(--saffron)}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.prasad-nav{color:var(--saffron)!important;font-weight:600!important}
+.nav-right{display:flex;align-items:center;gap:var(--sp-md)}
+.lang-btn{font-size:.68rem;font-weight:500;padding:4px 8px;border-radius:4px;color:var(--saffron);background:var(--bg-warm);font-weight:700; cursor:pointer;}
+.hamburger{display:none;flex-direction:column;gap:5px;width:30px;cursor:pointer}
+.hamburger span{display:block;height:2px;background:var(--text);border-radius:2px;transition:var(--tr)}
+
+/* Mobile Nav */
+.mob-nav{display:none;position:fixed;inset:0;background:var(--white);z-index:1100;padding:var(--sp-xl) var(--sp-lg);flex-direction:column;transform:translateX(100%);transition:transform .4s cubic-bezier(.4,0,.2,1)}
+.mob-nav.open{transform:translateX(0)}
+.mob-close{align-self:flex-end;font-size:1.6rem;cursor:pointer;background:none;border:none;color:var(--text);line-height:1}
+.mob-nav-links{display:flex;flex-direction:column;gap:var(--sp-lg);margin-top:var(--sp-xl)}
+.mob-nav-links a{font-family:var(--font-serif);font-size:1.5rem;font-weight:600;border-bottom:1px solid var(--border);padding-bottom:var(--sp-md)}
+
+/* ═══════════════════════════════════════
+   3. HERO WITH LOCAL VIDEO & SPIRITUAL GIF
+═══════════════════════════════════════ */
+.hero{min-height:94vh;position:relative;display:flex;align-items:center;overflow:hidden; background: #0A0A0A;}
+
+/* --- FINAL FIX: Direct Video Linking --- */
+/* Yahan file ka direct naam rakha gaya hai. Aapki downloaded file yahi honi chahiye */
+.hero-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 1; }
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,rgba(139,26,26,.30) 0%,rgba(196,91,26,.15) 45%,rgba(0,0,0,.50) 100%); z-index: 1;}
+.hero-drone-gif {
+    position: absolute; right: -5%; top: 50%; transform: translateY(-50%);
+    width: 600px; height: 600px; border-radius: 50%; overflow: hidden;
+    opacity: 0.30; pointer-events: none; z-index: 1;
+    mix-blend-mode: screen;
+}
+.hero-drone-gif video { width: 100%; height: 100%; object-fit: cover; }
+
+.hero-content{position:relative;z-index:2;color:#fff;max-width:680px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.9);margin-bottom:var(--sp-md);padding:6px 14px;border:1px solid rgba(255,255,255,.3);border-radius:20px}
+.hero h1{font-size:clamp(2.2rem,5.5vw,4rem);font-weight:700;color:#fff;line-height:1.1;margin-bottom:var(--sp-md)}
+.hero h1 em{color:var(--gold-lt);font-style:italic}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,.85);line-height:1.75;margin-bottom:var(--sp-xl);max-width:540px}
+.hero-ctas{display:flex;gap:var(--sp-md);flex-wrap:wrap}
+.hero-trust{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.5);backdrop-filter:blur(12px);padding:var(--sp-md) 0;z-index:2;border-top:1px solid rgba(255,255,255,.1)}
+.trust-items{display:flex;align-items:center;justify-content:center;gap:var(--sp-xl);flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.9);font-size:.82rem;font-weight:500}
+.trust-item .ti{color:var(--gold-lt);font-size:1rem}
+.hero-scroll{position:absolute;bottom:80px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:6px;color:rgba(255,255,255,.5);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase}
+.scroll-line{width:1px;height:40px;background:rgba(255,255,255,.3);animation:scrolll 2s ease-in-out infinite}
+@keyframes scrolll{0%,100%{opacity:.3}50%{opacity:.9}}
+
+/* ═══════════════════════════════════════
+   REST OF CSS (Unchanged structural styles)
+═══════════════════════════════════════ */
+.dashboard{padding:var(--sp-xl) 0;border-bottom:1px solid var(--border);background:var(--white)}
+.dashboard-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--sp-lg);flex-wrap:wrap;gap:var(--sp-md)}
+.live-pill{display:inline-flex;align-items:center;gap:6px;font-size:.75rem;font-weight:700;color:var(--saffron);padding:4px 12px;background:rgba(196,91,26,.08);border-radius:20px;border:1px solid rgba(196,91,26,.2)}
+.live-dot{width:7px;height:7px;background:#22c55e;border-radius:50%;animation:blink 1.5s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.dash-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-md)}
+.dash-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-lg);display:flex;gap:var(--sp-md);align-items:flex-start;transition:var(--tr)}
+.dash-card:hover{border-color:var(--saffron);box-shadow:var(--sh-soft);transform:translateY(-4px)}
+.dash-info label{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px}
+.dash-val{font-family:var(--font-serif);font-size:.95rem;font-weight:600;line-height:1.3}
+.dash-sub{font-size:.72rem;color:var(--text-muted);margin-top:2px}
+.dash-link{font-size:.72rem;color:var(--saffron);font-weight:600;text-decoration:underline}
+
+.prasad-section{padding:var(--sp-3xl) 0;background:var(--bg-warm);position:relative;overflow:hidden}
+.prasad-section::before{content:'🪷';position:absolute;font-size:35rem;opacity:.04;right:-5%;top:50%;transform:translateY(-50%);pointer-events:none;line-height:1}
+.prasad-inner{max-width:900px;margin:0 auto}
+.prasad-desc{color:var(--text-muted);font-size:1rem;line-height:1.75;margin-top:var(--sp-md)}
+.prasad-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-lg);margin-top:var(--sp-2xl)}
+.p-card{background:var(--white);border-radius:var(--r-lg);padding:var(--sp-2xl);border:1.5px solid var(--border);position:relative;overflow:hidden;transition:var(--tr)}
+.p-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--saffron),var(--gold))}
+.p-card:hover{transform:translateY(-5px);box-shadow:var(--sh-md);border-color:var(--saffron)}
+.p-card-title{font-family:var(--font-serif);font-size:1.35rem;font-weight:600;margin-bottom:var(--sp-sm)}
+.p-card-desc{font-size:.9rem;color:var(--text-muted);line-height:1.7;margin-bottom:var(--sp-lg)}
+.p-features{margin-bottom:var(--sp-lg)}
+.p-feature{display:flex;align-items:center;gap:8px;font-size:.84rem;color:var(--text-muted);margin-bottom:7px}
+.p-feature::before{content:'✓';color:var(--saffron);font-weight:700}
+.prasad-cta-row{display:flex;justify-content:center;gap:var(--sp-md);margin-top:var(--sp-xl);flex-wrap:wrap}
+
+.filter-tabs{display:flex;justify-content:center;gap:var(--sp-sm);flex-wrap:wrap;margin-bottom:var(--sp-xl)}
+.ftab{padding:8px 20px;border-radius:24px;font-size:.85rem;font-weight:500;color:var(--text-muted);border:1.5px solid var(--border);background:var(--white);transition:var(--tr);cursor:pointer;font-family:var(--font-body)}
+.ftab.active,.ftab:hover{background:var(--saffron);color:#fff;border-color:var(--saffron)}
+.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-lg)}
+.pkg-card{background:var(--white);border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border);transition:var(--tr)}
+.pkg-card:hover{transform:translateY(-6px);box-shadow:var(--sh-lg)}
+.pkg-img{height:220px;position:relative;overflow:hidden;display:flex;background:#000;}
+.pkg-card:hover .real-img { transform: scale(1.08); opacity: 0.9; }
+.pkg-badge{position:absolute;top:12px;left:12px;background:var(--saffron);color:#fff;font-size:.7rem;font-weight:700;padding:4px 10px;border-radius:20px; z-index: 2;}
+.pkg-rating{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.6);color:#fff;font-size:.75rem;font-weight:600;padding:4px 8px;border-radius:8px;backdrop-filter:blur(4px); z-index: 2;}
+.pkg-body{padding:var(--sp-lg)}
+.pkg-dur{font-size:.72rem;font-weight:700;color:var(--saffron);letter-spacing:.06em;text-transform:uppercase;margin-bottom:5px}
+.pkg-title{font-family:var(--font-serif);font-size:1.2rem;font-weight:600;margin-bottom:var(--sp-sm);line-height:1.3}
+.pkg-covers{font-size:.82rem;color:var(--text-muted);margin-bottom:var(--sp-md);line-height:1.55}
+.pkg-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:var(--sp-md)}
+.pkg-tag{font-size:.7rem;font-weight:500;color:var(--saffron);background:rgba(196,91,26,.08);padding:3px 10px;border-radius:20px}
+.pkg-foot{display:flex;align-items:center;justify-content:space-between;padding-top:var(--sp-md);border-top:1px solid var(--border)}
+.pkg-price-lbl{font-size:.68rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em}
+.pkg-price-val{font-family:var(--font-serif);font-size:1.3rem;font-weight:700;color:var(--saffron)}
+.pkg-price-note{font-size:.68rem;color:var(--text-muted)}
+
+.places-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-lg)}
+.place-card{background:var(--white);border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border);transition:var(--tr)}
+.place-card:hover{box-shadow:var(--sh-md);transform:translateY(-4px)}
+.place-img{height:200px;position:relative;overflow:hidden;background:#000;}
+.place-card:hover .real-img { transform: scale(1.1); opacity: 0.9;}
+.place-body{padding:var(--sp-lg)}
+.place-quote{font-family:var(--font-quote);font-style:italic;font-size:1rem;color:var(--saffron);margin-bottom:var(--sp-sm);line-height:1.5}
+.place-sig{font-size:.84rem;color:var(--text-muted);line-height:1.65;margin-bottom:var(--sp-md)}
+.btn-yatra{width:100%;padding:9px;border:1.5px solid var(--border);border-radius:var(--r-md);font-size:.8rem;font-weight:600;color:var(--saffron);background:transparent;transition:var(--tr);font-family:var(--font-body);cursor:pointer;opacity:0;transform:translateY(8px)}
+.place-card:hover .btn-yatra{opacity:1;transform:translateY(0)}
+.btn-yatra:hover,.btn-yatra.added{background:var(--saffron);color:#fff;border-color:var(--saffron)}
+
+.pujas-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-lg)}
+.puja-card{background:var(--white);border-radius:var(--r-lg);padding:var(--sp-xl);border:1px solid var(--border);display:flex;gap:var(--sp-lg);align-items:flex-start;transition:var(--tr)}
+.puja-card:hover{border-color:var(--saffron);box-shadow:var(--sh-soft);transform:translateX(4px)}
+.puja-info h3{font-family:var(--font-serif);font-size:1.1rem;font-weight:600;margin-bottom:5px}
+.puja-info p{font-size:.86rem;color:var(--text-muted);line-height:1.65;margin-bottom:var(--sp-md)}
+.btn-puja{font-size:.8rem;font-weight:600;color:var(--saffron);padding:7px 16px;border:1.5px solid var(--saffron);border-radius:var(--r-md);background:transparent;transition:var(--tr);font-family:var(--font-body);cursor:pointer}
+.btn-puja:hover{background:var(--saffron);color:#fff}
+
+.seva-strip{padding:var(--sp-xl) 0;background:var(--bg-deep);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.seva-inner{display:flex;align-items:center;gap:var(--sp-2xl);flex-wrap:wrap}
+.seva-text{flex:1;min-width:260px}
+.seva-text h3{font-family:var(--font-serif);font-size:1.35rem;font-weight:600;margin-bottom:5px}
+.seva-text p{font-size:.9rem;color:var(--text-muted);line-height:1.7}
+.seva-badges{display:flex;gap:var(--sp-md);flex-wrap:wrap}
+.seva-badge{display:flex;align-items:center;gap:8px;padding:10px 18px;background:var(--white);border:1px solid var(--border);border-radius:var(--r-md);font-size:.82rem;font-weight:600;white-space:nowrap}
+.seva-badge .si{color:var(--saffron)}
+
+.stats-sec{padding:var(--sp-2xl) 0;background:var(--vermilion);position:relative;overflow:hidden}
+.stats-sec::before{content:'ॐ';position:absolute;font-size:55vw;color:rgba(255,255,255,.03);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;font-family:var(--font-serif);line-height:1}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-lg);position:relative;z-index:1}
+.stat-item{text-align:center;color:#fff}
+.stat-num{font-family:var(--font-serif);font-size:clamp(2.5rem,5vw,3.5rem);font-weight:700;line-height:1;margin-bottom:7px}
+.stat-lbl{font-size:.875rem;color:rgba(255,255,255,.78);font-weight:500}
+
+.test-head{text-align:center;margin-bottom:var(--sp-2xl)}
+.test-meta{display:flex;justify-content:center;gap:var(--sp-md);margin-top:var(--sp-md);flex-wrap:wrap}
+.test-slider{overflow:hidden;position:relative}
+.test-track{display:flex;transition:transform .5s cubic-bezier(.4,0,.2,1);will-change:transform}
+.test-card{min-width:calc(33.333% - 14px);margin-right:var(--sp-lg);background:var(--white);border-radius:var(--r-lg);padding:var(--sp-xl);border:1px solid var(--border);flex-shrink:0}
+.test-stars{color:#C9A227;font-size:.95rem;margin-bottom:var(--sp-md);letter-spacing:2px}
+.test-text{font-family:var(--font-quote);font-style:italic;font-size:1.05rem;line-height:1.75;margin-bottom:var(--sp-lg)}
+.test-author{display:flex;align-items:center;gap:var(--sp-md)}
+.test-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--saffron),var(--gold));display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-serif);font-weight:700;font-size:1.05rem;flex-shrink:0}
+.test-name{font-weight:600;font-size:.88rem}
+.test-loc{font-size:.76rem;color:var(--text-muted);margin-top:2px}
+.slider-dots{display:flex;justify-content:center;gap:8px;margin-top:var(--sp-xl)}
+.sdot{width:8px;height:8px;border-radius:50%;background:var(--border);border:none;cursor:pointer;transition:var(--tr)}
+.sdot.active{background:var(--saffron);width:24px;border-radius:4px}
+
+.travel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-lg)}
+.travel-card{background:var(--white);border-radius:var(--r-lg);padding:var(--sp-xl);border:1px solid var(--border);transition:var(--tr)}
+.travel-card:hover{border-color:var(--saffron);box-shadow:var(--sh-soft)}
+.travel-card h3{font-family:var(--font-serif);font-size:1.15rem;font-weight:600;margin-bottom:var(--sp-sm)}
+.travel-card p{font-size:.87rem;color:var(--text-muted);line-height:1.7}
+
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-2xl);align-items:start}
+.faq-sidebar{position:sticky;top:100px}
+.faq-sidebar h2{font-family:var(--font-serif);font-size:2rem;font-weight:600;margin-bottom:var(--sp-md)}
+.faq-sidebar p{color:var(--text-muted);font-size:.95rem;line-height:1.75;margin-bottom:var(--sp-lg)}
+.accord-item{border-bottom:1px solid var(--border)}
+.accord-hdr{display:flex;justify-content:space-between;align-items:center;padding:var(--sp-lg) 0;cursor:pointer;font-weight:600;font-size:.93rem;background:none;border:none;width:100%;text-align:left;font-family:var(--font-body);color:var(--text);transition:color .2s}
+.accord-hdr:hover{color:var(--saffron)}
+.accord-arr{font-size:.8rem;color:var(--saffron);transition:transform .3s;flex-shrink:0;margin-left:var(--sp-md)}
+.accord-item.open .accord-arr{transform:rotate(180deg)}
+.accord-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.accord-item.open .accord-body{max-height:300px}
+.accord-inner{padding-bottom:var(--sp-lg);font-size:.875rem;color:var(--text-muted);line-height:1.75}
+
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-lg)}
+.blog-card{background:var(--white);border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border);transition:var(--tr)}
+.blog-card:hover{transform:translateY(-4px);box-shadow:var(--sh-md)}
+.blog-img{height:190px;position:relative;overflow:hidden;background:#000;}
+.blog-card:hover .real-img { transform: scale(1.08); opacity: 0.9;}
+.blog-body{padding:var(--sp-lg)}
+.blog-tag{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--saffron);display:inline-block;margin-bottom:var(--sp-sm)}
+.blog-title{font-family:var(--font-serif);font-size:1.05rem;font-weight:600;line-height:1.4;margin-bottom:var(--sp-sm)}
+.blog-read{font-size:.78rem;font-weight:600;color:var(--saffron);display:inline-flex;align-items:center;gap:4px;margin-top:var(--sp-md)}
+
+.quote-sec{padding:var(--sp-3xl) 0;background:linear-gradient(135deg,var(--saffron) 0%,var(--vermilion) 100%);position:relative;overflow:hidden}
+.quote-sec::after{content:'ॐ';position:absolute;font-size:60vw;color:rgba(255,255,255,.04);top:50%;right:-8%;transform:translateY(-50%);pointer-events:none;font-family:var(--font-serif);line-height:1}
+.quote-inner{display:grid;grid-template-columns:1fr 1.15fr;gap:var(--sp-2xl);align-items:center;position:relative;z-index:1}
+.quote-info{color:#fff}
+.quote-info .eyebrow{color:rgba(255,255,255,.7)}
+.quote-info h2{color:#fff;font-size:clamp(1.75rem,3vw,2.4rem);margin:var(--sp-sm) 0 var(--sp-md)}
+.quote-info p{color:rgba(255,255,255,.82);font-size:.95rem;line-height:1.75}
+.quote-benefits{margin-top:var(--sp-lg);display:flex;flex-direction:column;gap:var(--sp-sm)}
+.q-benefit{display:flex;align-items:center;gap:10px;font-size:.875rem;color:rgba(255,255,255,.9)}
+.q-chk{width:22px;height:22px;background:rgba(255,255,255,.2);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0}
+.form-wrap{background:#fff;border-radius:var(--r-lg);padding:var(--sp-xl);box-shadow:var(--sh-lg)}
+.step-prog{display:flex;gap:6px;margin-bottom:var(--sp-lg)}
+.sprog{height:4px;border-radius:2px;flex:1;background:var(--border);transition:background .3s}
+.sprog.done{background:var(--saffron)}
+.step-title{font-family:var(--font-serif);font-size:1.2rem;font-weight:600;margin-bottom:3px}
+.step-sub{font-size:.78rem;color:var(--text-muted);margin-bottom:var(--sp-lg)}
+.form-step{display:none}
+.form-step.active{display:block}
+.f-group{margin-bottom:var(--sp-md)}
+.f-group label{display:block;font-size:.78rem;font-weight:600;color:var(--text);margin-bottom:5px;letter-spacing:.02em}
+.f-ctrl{width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:var(--r-md);font-size:.9rem;font-family:var(--font-body);color:var(--text);background:var(--bg);transition:border-color .2s;outline:none;min-height:44px}
+.f-ctrl:focus{border-color:var(--saffron);background:#fff}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-md)}
+.f-actions{display:flex;gap:var(--sp-md);margin-top:var(--sp-lg)}
+.btn-next,.btn-submit{flex:1;padding:12px;border-radius:var(--r-md);font-size:.9rem;font-weight:700;background:var(--saffron);color:#fff;transition:var(--tr);font-family:var(--font-body);cursor:pointer;border:none;min-height:48px}
+.btn-next:hover,.btn-submit:hover{background:var(--vermilion);transform:translateY(-1px)}
+.btn-back{padding:12px 20px;border-radius:var(--r-md);font-size:.9rem;font-weight:600;background:transparent;color:var(--text-muted);border:1.5px solid var(--border);transition:var(--tr);font-family:var(--font-body);cursor:pointer;min-height:48px}
+.form-success{display:none;text-align:center;padding:var(--sp-2xl) var(--sp-lg)}
+.form-success.show{display:block}
+.fs-icon{font-size:3rem;margin-bottom:var(--sp-md)}
+.form-success h3{font-family:var(--font-serif);font-size:1.5rem;font-weight:600;margin-bottom:var(--sp-sm)}
+.form-success p{color:var(--text-muted);font-size:.9rem;line-height:1.7}
+
+.footer{background:#111;color:rgba(255,255,255,.8);padding:var(--sp-3xl) 0 var(--sp-xl)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:var(--sp-2xl);padding-bottom:var(--sp-2xl);border-bottom:1px solid rgba(255,255,255,.08)}
+.footer .logo-name{color:#C9A227;font-size:1.25rem}
+.footer .logo-sub{color:rgba(255,255,255,.35)}
+.footer-desc{font-size:.875rem;color:rgba(255,255,255,.5);line-height:1.75;margin:var(--sp-md) 0 var(--sp-lg)}
+.footer-addr{font-size:.8rem;color:rgba(255,255,255,.42);line-height:1.9}
+.footer-col h4{font-family:var(--font-body);font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.88);margin-bottom:var(--sp-lg)}
+.footer-links{display:flex;flex-direction:column;gap:9px}
+.footer-links a{font-size:.875rem;color:rgba(255,255,255,.5);transition:color .2s}
+.footer-links a:hover{color:#C9A227}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;padding-top:var(--sp-lg);font-size:.76rem;color:rgba(255,255,255,.3);flex-wrap:wrap;gap:var(--sp-md)}
+
+.floating{position:fixed;bottom:28px;right:22px;z-index:999;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.float-btn{display:flex;align-items:center;gap:10px;padding:12px 18px;border-radius:30px;font-size:.84rem;font-weight:700;color:#fff;cursor:pointer;border:none;transition:var(--tr);box-shadow:0 4px 20px rgba(0,0,0,.2);white-space:nowrap;font-family:var(--font-body);min-height:50px}
+.float-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.3)}
+.f-wa{background:#25D366}
+.f-pr{background:var(--saffron)}
+.float-icon{font-size:1.25rem;flex-shrink:0}
+
+.sticky-trust{position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-top:1px solid var(--border);padding:9px var(--sp-lg);z-index:998;display:flex;justify-content:center;align-items:center;gap:var(--sp-lg);font-size:.79rem;font-weight:500;transform:translateY(100%);transition:transform .4s}
+.sticky-trust.show{transform:translateY(0)}
+.sti{display:flex;align-items:center;gap:6px;color:var(--text-muted)}
+.sti .si{color:var(--saffron);font-weight:700}
+
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:2000;align-items:center;justify-content:center;padding:var(--sp-lg)}
+.modal-overlay.open{display:flex}
+.modal{background:#fff;border-radius:var(--r-lg);padding:var(--sp-2xl);max-width:540px;width:100%;position:relative;max-height:90vh;overflow-y:auto}
+.modal-close{position:absolute;top:16px;right:16px;font-size:1.4rem;cursor:pointer;background:none;border:none;color:var(--text-muted);line-height:1}
+.modal h2{font-family:var(--font-serif);font-size:1.5rem;font-weight:600;margin-bottom:var(--sp-sm)}
+.modal-sub{font-size:.9rem;color:var(--text-muted);margin-bottom:var(--sp-xl)}
+.prasad-type-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-md);margin-bottom:var(--sp-lg)}
+.pt-opt{border:1.5px solid var(--border);border-radius:var(--r-md);padding:var(--sp-md);text-align:center;cursor:pointer;transition:var(--tr)}
+.pt-opt:hover,.pt-opt.active{border-color:var(--saffron);background:rgba(196,91,26,.05)}
+.pt-opt .pt-name{font-size:.85rem;font-weight:600}
+.pt-opt .pt-price{font-size:.75rem;color:var(--saffron);font-weight:700;margin-top:3px}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════ */
+@media(max-width:1024px){
+  .pkg-grid,.places-grid,.blog-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:var(--sp-xl)}
+  .dash-grid,.stats-grid{grid-template-columns:repeat(2,1fr)}
+  .quote-inner{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  :root{--sp-3xl:4rem;--sp-2xl:2.5rem}
+  .nav-links,.lang-sw,.nav-right .btn{display:none}
+  .hamburger{display:flex}
+  .mob-nav{display:flex}
+  .pkg-grid,.places-grid,.blog-grid,.pujas-grid,.travel-grid,.prasad-grid{grid-template-columns:1fr}
+  .faq-grid{grid-template-columns:1fr}
+  .faq-sidebar{position:static}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .test-card{min-width:calc(100% - 16px)}
+  .hero-drone-gif { display: none; }
+  .hero-trust{display:none}
+  .f-row{grid-template-columns:1fr}
+  .float-btn .float-label{display:none}
+  .float-btn{padding:14px;border-radius:50%}
+  .footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .container{padding:0 var(--sp-md)}
+  .dash-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<div class="ticker-bar">
+  <div class="container">
+    <div class="ticker-inner">
+      <span class="ticker-label">🔴 Live</span>
+      <div class="ticker-scroll">
+        <div class="ticker-content">
+          <span>Today's Tithi: Ashadha Shukla Chaturdashi</span>
+          <span>Mahakal Bhasma Aarti: 4:00 AM (Reporting: 2:30 AM)</span>
+          <span>VIP Darshan: 07:00 AM – 10:30 AM | General Darshan: 04:00 AM – 11:00 PM</span>
+          <span>Shipra Aarti: Evening 7:30 PM Ram Ghat</span>
+          <span>Next Bhasma Aarti Slot: Booking available after 15 days</span>
+          <span>Today's Tithi: Ashadha Shukla Chaturdashi</span>
+          <span>Mahakal Bhasma Aarti: 4:00 AM (Reporting: 2:30 AM)</span>
+          <span>VIP Darshan: 07:00 AM – 10:30 AM | General Darshan: 04:00 AM – 11:00 PM</span>
+          <span>Shipra Aarti: Evening 7:30 PM Ram Ghat</span>
+          <span>Next Bhasma Aarti Slot: Booking available after 15 days</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="#" class="logo">
+        <div class="logo-icon">🕉</div>
+        <div class="logo-text">
+          <span class="logo-name">Explore Ujjain</span>
+          <span class="logo-sub">Selfless Pilgrimage Service · Est. 2026</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#packages">Packages</a>
+        <a href="#pujas">Pujas</a>
+        <a href="#prasad" class="prasad-nav">Prasad </a>
+        <a href="#places">Darshan Guide</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <div class="lang-sw">
+          <button class="lang-btn active" data-lang="en">EN</button>
+        </div>
+        <a href="#contact" class="btn btn-saffron">Book Darshan</a>
+      </div>
+      <div class="hamburger" onclick="toggleMobNav(true)">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="mob-nav" id="mobNav">
+  <button class="mob-close" onclick="toggleMobNav(false)">✕</button>
+  <div class="logo" style="margin-top:var(--sp-lg)">
+    <div class="logo-icon">🕉</div>
+    <div class="logo-text">
+      <span class="logo-name">Explore Ujjain</span>
+    </div>
+  </div>
+  <div class="mob-nav-links">
+    <a href="#home" onclick="toggleMobNav(false)">Home</a>
+    <a href="#packages" onclick="toggleMobNav(false)">Packages</a>
+    <a href="#pujas" onclick="toggleMobNav(false)">Pujas</a>
+    <a href="#prasad" onclick="toggleMobNav(false)" style="color:var(--saffron)">Prasad 🙏</a>
+    <a href="#places" onclick="toggleMobNav(false)">Darshan Guide</a>
+    <a href="#contact" onclick="toggleMobNav(false)">Contact</a>
+  </div>
+  <a href="#contact" class="btn btn-saffron" style="margin-top:var(--sp-lg)" onclick="toggleMobNav(false)">📿 Book Darshan</a>
+</div>
+
+<section class="hero" id="home">
+
+  <video class="hero-video" autoplay loop muted playsinline>
+    <source src="bg-video.mp4" type="video/mp4">
+  </video>
+  
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  
+  <div class="hero-drone-gif">
+    <video autoplay loop muted playsinline>
+      <source src="om-video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">🛕 One of the 12 Jyotirlingas · Ujjain, Madhya Pradesh</div>
+      <h1>Explore Sacred <em>Ujjain</em> &amp; Mahakaleshwar Tour Packages</h1>
+      <p class="hero-sub">Curated Ujjain pilgrimage itineraries — VIP Darshan, Bhasma Aarti assistance, Local AC transport &amp; Premium Hotels. Selfless Service, No Hidden Costs.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/6263735651?text=Jai%20Mahakal!%20I%20want%20to%20visit%20Ujjain.%20Please%20assist%20me." target="_blank" class="btn btn-white btn-lg">
+          💬 Travel Assistance (WhatsApp)
+        </a>
+        <a href="#packages" class="btn btn-lg" style="border:2px solid rgba(255,255,255,.6);color:#fff">
+          📜 View Packages ↓
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-trust">
+    <div class="container">
+      <div class="trust-items">
+        <div class="trust-item"><span class="ti">✓</span> 100% Selfless Service</div>
+        <div class="trust-item"><span class="ti">✓</span> No Hidden Commissions</div>
+        <div class="trust-item"><span class="ti">⭐</span> 5.0 Google Rating</div>
+        <div class="trust-item"><span class="ti">👥</span> 50K+ Happy Pilgrims</div>
+        <div class="trust-item"><span class="ti">🏛</span> MP Tourism Registered</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<div class="dashboard">
+  <div class="container">
+    <div class="dashboard-head reveal">
+      <div>
+        <p class="eyebrow">Real-Time Update</p>
+        <h2 class="sec-title" style="font-size:1.5rem">Ujjain Live Status</h2>
+      </div>
+      <div class="live-pill"><span class="live-dot"></span> Live Dashboard · Auto-Updated</div>
+    </div>
+    <div class="dash-grid">
+      <div class="dash-card reveal">
+        <div class="icon-img-box"><img src="assets/icon-calendar.jpg" alt="Calendar"></div>
+        <div class="dash-info">
+          <label>Today's Tithi</label>
+          <div class="dash-val">Ashadha Shukla Chaturdashi</div>
+          <div class="dash-sub">Thursday · Full Moon Period</div>
+        </div>
+      </div>
+      <div class="dash-card reveal">
+        <div class="icon-img-box"><img src="assets/icon-fire-aarti.jpg" alt="Fire Aarti"></div>
+        <div class="dash-info">
+          <label>Bhasma Aarti</label>
+          <div class="dash-val">Morning 4:00 AM</div>
+          <div class="dash-sub">Reporting: 2:30 AM | <a href="https://shrimahakaleshwar.com" target="_blank" class="dash-link">Booking →</a></div>
+        </div>
+      </div>
+      <div class="dash-card reveal">
+        <div class="icon-img-box"><img src="assets/icon-devotees.jpg" alt="Crowd"></div>
+        <div class="dash-info">
+          <label>Crowd Status</label>
+          <div class="dash-val" style="color:#F59E0B">Medium · Avoid 11AM–2PM</div>
+          <div class="dash-sub">Best time: Early morning 5–8 AM</div>
+        </div>
+      </div>
+      <div class="dash-card reveal">
+        <div class="icon-img-box"><img src="assets/icon-weather.jpg" alt="Weather"></div>
+        <div class="dash-info">
+          <label>Weather · Ujjain</label>
+          <div class="dash-val" id="weather-val">34°C · Partly Cloudy</div>
+          <div class="dash-sub"><a href="https://www.youtube.com/watch?v=RyP0k7Fmu6E" target="_blank" class="dash-link">🔴 Live Darshan Stream</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="prasad-section" id="prasad">
+  <div class="container">
+    <div class="prasad-inner">
+      <div class="sec-head prasad-header reveal">
+        <p class="eyebrow">Divine Blessing · Pan-India Delivery</p>
+        <h2 class="sec-title">Shri Mahakaleshwar Prasad Service 🙏</h2>
+        <p class="prasad-desc">Receive Baba Mahakal's blessings directly to your doorstep. Devotees visiting Ujjain can collect Prasad after Darshan, or order it from anywhere in India — safe, fresh, with sacred packaging.</p>
+      </div>
+      <div class="prasad-grid">
+        <div class="p-card reveal">
+          <div class="icon-img-box" style="margin-bottom:12px; width:80px; height:80px;"><img src="assets/prasad-temple-collection.jpg" alt="Temple Collection"></div>
+          <div class="p-card-title">Darshan &amp; Collect</div>
+          <p class="p-card-desc">Pre-book your Mahakal Laddu Prasad and collect it offline after your Ujjain Darshan. Delivery counter available near Mahakal temple exit.</p>
+          <div class="p-features">
+            <div class="p-feature">Pre-book up to 7 days in advance</div>
+            <div class="p-feature">Skip the queue – designated counter</div>
+            <div class="p-feature">Mahakal Laddu + Bhasmi Prasad</div>
+            <div class="p-feature">Valid for personal &amp; family collection</div>
+          </div>
+          <a href="#contact" class="btn btn-outline">📿 Book Prasad for Darshan</a>
+        </div>
+        <div class="p-card reveal" style="position:relative">
+          <div style="position:absolute;top:16px;right:16px;background:var(--gold);color:#fff;font-size:.68rem;font-weight:700;padding:3px 10px;border-radius:20px; z-index:2;">PAN-INDIA</div>
+          <div class="icon-img-box" style="margin-bottom:12px; width:80px; height:80px;"><img src="assets/prasad-home-delivery.jpg" alt="Delivery Box"></div>
+          <div class="p-card-title">Home Delivery</div>
+          <p class="p-card-desc">Order sacred Prasad online. Delivered anywhere in India within 5–7 working days with temperature-controlled, ritual-pure packaging.</p>
+          <div class="p-features">
+            <div class="p-feature">Delivered anywhere in India</div>
+            <div class="p-feature">Vacuum-sealed fresh packaging</div>
+            <div class="p-feature">Sankalp Patra (Certificate) included</div>
+            <div class="p-feature">Monthly Prasad Subscription available</div>
+          </div>
+          <button class="btn btn-saffron" onclick="openPrasadModal()">🪷 Receive Prasad at Home</button>
+        </div>
+      </div>
+      <div class="prasad-cta-row reveal">
+        <div style="text-align:center;background:rgba(196,91,26,.08);border-radius:var(--r-lg);padding:var(--sp-lg) var(--sp-xl);border:1px dashed var(--saffron);max-width:700px;margin:0 auto">
+          <p class="q-italic" style="font-size:1.1rem;margin-bottom:var(--sp-sm)">"Mahakal's Prasad delivered home every month — Start your monthly subscription"</p>
+          <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:var(--sp-md)">₹299/month · Fresh Laddu + Bhasmi + Gangajal · Auto-renewal · Cancel anytime</p>
+          <button class="btn btn-saffron" onclick="openPrasadModal()">📦 Subscribe to Monthly Mahakal Prasad</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="packages">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Explore Our Yatra Plans</p>
+      <h2 class="sec-title">Curated Ujjain &amp; MP Packages</h2>
+      <p class="sec-sub">VIP Darshan assistance · Local AC transport · Premium hotels · Fully customisable itineraries</p>
+    </div>
+    <div class="filter-tabs reveal">
+      <button class="ftab active" data-filter="all">All Packages</button>
+      <button class="ftab" data-filter="individual">Individual / Couple</button>
+      <button class="ftab" data-filter="group">Group Yatra</button>
+      <button class="ftab" data-filter="senior">Senior Citizen Special ♿</button>
+      <button class="ftab" data-filter="custom">Custom / DIY</button>
+    </div>
+    <div class="pkg-grid">
+      <div class="pkg-card reveal" data-category="individual">
+        <div class="pkg-img">
+          <img src="assets/pkg-mahakal-darshan.jpg" alt="Ujjain Temple" class="real-img">
+          <span class="pkg-badge">BESTSELLER</span>
+          <span class="pkg-rating">⭐ 4.9 (2.4k)</span>
+        </div>
+        <div class="pkg-body">
+          <p class="pkg-dur">1 Night · 2 Days</p>
+          <h3 class="pkg-title">Ujjain Mahakal &amp; Local Darshan</h3>
+          <p class="pkg-covers">Mahakaleshwar · Kal Bhairav · Harsiddhi Mata · Sandipani Ashram · Ram Ghat Aarti</p>
+          <div class="pkg-tags">
+            <span class="pkg-tag">VIP Darshan</span>
+            <span class="pkg-tag">AC Transfer</span>
+            <span class="pkg-tag">Customisable</span>
+          </div>
+          <div class="pkg-foot">
+            <div class="pkg-price">
+              <span class="pkg-price-lbl">Starts from</span>
+              <span class="pkg-price-val">₹3,499</span>
+              <span class="pkg-price-note">per person · 2 adults</span>
+            </div>
+            <a href="#contact" class="btn btn-saffron">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="pkg-card reveal" data-category="group">
+        <div class="pkg-img">
+          <img src="assets/pkg-omkareshwar-yatra.jpg" alt="Omkareshwar River" class="real-img">
+          <span class="pkg-badge">JYOTIRLINGA</span>
+          <span class="pkg-rating">⭐ 4.8 (1.8k)</span>
+        </div>
+        <div class="pkg-body">
+          <p class="pkg-dur">2 Nights · 3 Days</p>
+          <h3 class="pkg-title">Jyotirlinga Yatra — Ujjain &amp; Omkareshwar</h3>
+          <p class="pkg-covers">Mahakaleshwar Bhasma Aarti · Omkareshwar Jyotirlinga · Mortakka · Mamleswara Temple</p>
+          <div class="pkg-tags">
+            <span class="pkg-tag">Bhasma Aarti Help</span>
+            <span class="pkg-tag">Group Size: 10–40</span>
+            <span class="pkg-tag">Meals Included</span>
+          </div>
+          <div class="pkg-foot">
+            <div class="pkg-price">
+              <span class="pkg-price-lbl">Starts from</span>
+              <span class="pkg-price-val">₹5,999</span>
+              <span class="pkg-price-note">per person · group 10+</span>
+            </div>
+            <a href="#contact" class="btn btn-saffron">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="pkg-card reveal" data-category="custom">
+        <div class="pkg-img">
+          <img src="assets/pkg-malwa-heritage.jpg" alt="Indian Heritage" class="real-img">
+          <span class="pkg-badge">MALWA DARSHAN</span>
+          <span class="pkg-rating">⭐ 4.9 (980)</span>
+        </div>
+        <div class="pkg-body">
+          <p class="pkg-dur">3 Nights · 4 Days</p>
+          <h3 class="pkg-title">Malwa Darshan — Ujjain, Omkareshwar, Maheshwar &amp; Mandu</h3>
+          <p class="pkg-covers">Mahakaleshwar · Omkareshwar · Maheshwar Ghats · Mandu Fort · Local cuisine</p>
+          <div class="pkg-tags">
+            <span class="pkg-tag">VIP Darshan</span>
+            <span class="pkg-tag">Premium Hotels</span>
+            <span class="pkg-tag">Customisable</span>
+          </div>
+          <div class="pkg-foot">
+            <div class="pkg-price">
+              <span class="pkg-price-lbl">Starts from</span>
+              <span class="pkg-price-val">₹9,499</span>
+              <span class="pkg-price-note">per person · 2 adults</span>
+            </div>
+            <a href="#contact" class="btn btn-saffron">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="pkg-card reveal" data-category="senior" style="display:none">
+        <div class="pkg-img">
+          <img src="assets/pkg-senior-citizen.jpg" alt="Elders Blessing" class="real-img">
+          <span class="pkg-badge">SENIOR SPECIAL</span>
+          <span class="pkg-rating">⭐ 5.0 (440)</span>
+        </div>
+        <div class="pkg-body">
+          <p class="pkg-dur">1 Night · 2 Days</p>
+          <h3 class="pkg-title">Senior Citizen Special — Slow-Paced Ujjain Darshan</h3>
+          <p class="pkg-covers">Wheelchair assistance · Battery car · VIP darshan queue-free · Doctor on call</p>
+          <div class="pkg-tags">
+            <span class="pkg-tag">Wheelchair ♿</span>
+            <span class="pkg-tag">Slow Pace</span>
+            <span class="pkg-tag">Medical Help</span>
+          </div>
+          <div class="pkg-foot">
+            <div class="pkg-price">
+              <span class="pkg-price-lbl">Starts from</span>
+              <span class="pkg-price-val">₹4,499</span>
+              <span class="pkg-price-note">per person · 2 seniors</span>
+            </div>
+            <a href="#contact" class="btn btn-saffron">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal" style="text-align:center;margin-top:var(--sp-xl)">
+      <p style="color:var(--text-muted);font-size:.9rem;margin-bottom:var(--sp-md)">Need a custom package? Our team will create a personalized itinerary for you.</p>
+      <a href="https://wa.me/6263735651?text=Jai%20Mahakal!%20I%20need%20a%20custom%20travel%20package." target="_blank" class="btn btn-outline btn-lg">💬 Plan Custom Yatra</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-warm" id="places">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Explore Sacred Ujjain</p>
+      <h2 class="sec-title">9 Divine Destinations</h2>
+      <p class="sec-sub">Every street in Ujjain holds a story. A journey to these sacred places brings peace to the mind and fulfills the soul.</p>
+    </div>
+    <div class="places-grid">
+      <div class="place-card reveal">
+        <div class="place-img"><img src="assets/place-mahakal-lingam.jpg" alt="Mahakal Temple" class="real-img"></div>
+        <div class="place-body">
+          <p class="place-quote">"The Lord of Time, Victory to Shri Mahakal."</p>
+          <p class="place-sig">One of the 12 Jyotirlingas — the world-famous South-facing lingam. Attending the Bhasma Aarti is a profoundly sacred experience.</p>
+          <button class="btn-yatra">+ Add to My Itinerary</button>
+        </div>
+      </div>
+      <div class="place-card reveal">
+        <div class="place-img"><img src="assets/place-mahalok-corridor.jpg" alt="Corridor" class="real-img"></div>
+        <div class="place-body">
+          <p class="place-quote">"A wonderful blend of ancient tales and modernity."</p>
+          <p class="place-sig">A beautiful modern corridor featuring intricate murals, stone sculptures, and a serene open layout.</p>
+          <button class="btn-yatra">+ Add to My Itinerary</button>
+        </div>
+      </div>
+      <div class="place-card reveal">
+        <div class="place-img"><img src="assets/place-kal-bhairav.jpg" alt="Guardian Deity" class="real-img"></div>
+        <div class="place-body">
+          <p class="place-quote">"The guardian of Ujjain, head of the Eight Bhairavas."</p>
+          <p class="place-sig">The guardian deity of Ujjain. It holds a unique tradition where liquor is offered to the Lord.</p>
+          <button class="btn-yatra">+ Add to My Itinerary</button>
+        </div>
+      </div>
+      <div class="place-card reveal">
+        <div class="place-img"><img src="assets/place-harsiddhi-mata.jpg" alt="Diyas" class="real-img"></div>
+        <div class="place-body">
+          <p class="place-quote">"Symbol of strength and devotion from the Maratha era."</p>
+          <p class="place-sig">An important Shakti Peeth. Famous for its two massive 11th-century lamp pillars where 1008 lamps are lit.</p>
+          <button class="btn-yatra">+ Add to My Itinerary</button>
+        </div>
+      </div>
+      <div class="place-card reveal">
+        <div class="place-img"><img src="assets/place-ram-ghat.jpg" alt="River Ghat" class="real-img"></div>
+        <div class="place-body">
+          <p class="place-quote">"A spiritual evening on the banks of the sacred Shipra."</p>
+          <p class="place-sig">The main center of the Kumbh Mela. The daily Shipra Aarti offers eternal peace to the mind.</p>
+          <button class="btn-yatra">+ Add to My Itinerary</button>
+        </div>
+      </div>
+      <div class="place-card reveal">
+        <div class="place-img"><img src="assets/place-sandipani-ashram.jpg" alt="Ashram" class="real-img"></div>
+        <div class="place-body">
+          <p class="place-quote">"Where Lord Narayan himself received education."</p>
+          <p class="place-sig">Lord Krishna, Balaram, and Sudama received their education in this gurukul. A highly peaceful environment.</p>
+          <button class="btn-yatra">+ Add to My Itinerary</button>
+        </div>
+      </div>
+      <div class="place-card reveal">
+        <div class="place-img"><img src="assets/place-mangalnath.jpg" alt="Mars Temple" class="real-img"></div>
+        <div class="place-body">
+          <p class="place-quote">"The birthplace of Mars, the son of the Earth."</p>
+          <p class="place-sig">This red marble temple is considered the birthplace of the planet Mars. Famous for Mangal Dosh Nivaran rituals.</p>
+          <button class="btn-yatra">+ Add to My Itinerary</button>
+        </div>
+      </div>
+      <div class="place-card reveal">
+        <div class="place-img"><img src="assets/place-chintaman-ganesh.jpg" alt="Ganesh Statue" class="real-img"></div>
+        <div class="place-body">
+          <p class="place-quote">"Residing in three forms, the remover of all worries."</p>
+          <p class="place-sig">Chintaman, Icchaman, and Siddhivinayak — three idols in one place. Features ancient stone pillars.</p>
+          <button class="btn-yatra">+ Add to My Itinerary</button>
+        </div>
+      </div>
+      <div class="place-card reveal">
+        <div class="place-img"><img src="assets/place-vedh-shala.jpg" alt="Observatory" class="real-img"></div>
+        <div class="place-body">
+          <p class="place-quote">"Proof of ancient India's scientific precision."</p>
+          <p class="place-sig">An 18th-century observatory. Its geometrical structures and giant sundial are prime examples of ancient Indian science.</p>
+          <button class="btn-yatra">+ Add to My Itinerary</button>
+        </div>
+      </div>
+    </div>
+    <div id="yatra-summary" class="reveal" style="display:none;margin-top:var(--sp-xl);text-align:center">
+      <div style="background:var(--white);border:1.5px solid var(--saffron);border-radius:var(--r-lg);padding:var(--sp-lg) var(--sp-xl);display:inline-block">
+        <p class="eyebrow" style="margin-bottom:var(--sp-sm)">Your Custom Itinerary</p>
+        <p id="yatra-list" style="font-family:var(--font-serif);font-size:1rem;color:var(--text);margin-bottom:var(--sp-md)"></p>
+        <a href="#contact" class="btn btn-saffron">📿 Plan This Yatra</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="pujas">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Divine Rituals &amp; Ceremonies</p>
+      <h2 class="sec-title">Sacred Pujas &amp; Service</h2>
+      <p class="sec-sub">Performed on the holy land of Ujjain according to the Vedic traditions of sages. Assistance &amp; complete guidance included.</p>
+    </div>
+    <div class="pujas-grid">
+      <div class="puja-card reveal">
+        <div class="icon-img-box"><img src="assets/puja-bhasma.jpg" alt="Fire"></div>
+        <div class="puja-info">
+          <h3>Mahakaleshwar Bhasma Aarti</h3>
+          <p>The world's most unique Aarti — adorning Lord Mahakal with holy ash. Morning 4:00 AM. Our team provides Darshan booking, reporting time, and complete guidance.</p>
+          <button class="btn-puja" onclick="openQuoteModal('Bhasma Aarti')">Book Bhasma Aarti Assistance</button>
+        </div>
+      </div>
+      <div class="puja-card reveal">
+        <div class="icon-img-box"><img src="assets/puja-mangal-dosh.jpg" alt="Red Temple"></div>
+        <div class="puja-info">
+          <h3>Mangal Dosh Nivaran (Bhat Puja)</h3>
+          <p>Special Bhat Puja at Mangalnath Temple. Resolving planetary flaws right at the birthplace of Mars is considered highly auspicious.</p>
+          <button class="btn-puja" onclick="openQuoteModal('Mangal Dosh Puja')">Book Mangal Puja</button>
+        </div>
+      </div>
+      <div class="puja-card reveal">
+        <div class="icon-img-box"><img src="assets/puja-kaal-sarp.jpg" alt="River Ritual"></div>
+        <div class="puja-info">
+          <h3>Kaal Sarp Dosh Puja</h3>
+          <p>Special rituals on the holy banks of the Shipra River. This Ujjain puja is highly renowned and effective for liberation from Kaal Sarp dosh.</p>
+          <button class="btn-puja" onclick="openQuoteModal('Kaal Sarp Dosh Puja')">Book Kaal Sarp Puja</button>
+        </div>
+      </div>
+      <div class="puja-card reveal">
+        <div class="icon-img-box"><img src="assets/puja-rudrabhishek.jpg" alt="Linga Ritual"></div>
+        <div class="puja-info">
+          <h3>Rudrabhishek Service</h3>
+          <p>Special Rudrabhishek at Mahakaleshwar or any of the 84 Mahadev temples. You will receive a Sankalp Patra (Certificate) along with your name and gotra.</p>
+          <button class="btn-puja" onclick="openQuoteModal('Rudrabhishek')">Book Rudrabhishek</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="seva-strip">
+  <div class="container">
+    <div class="seva-inner">
+      <div class="seva-text reveal">
+        <h3>🙏 Selfless Service &amp; Transparency</h3>
+        <p>Our objective is to make your journey easier. No hidden agent commissions are charged for Prasad and Puja. A clear breakdown of actual cost + shipping charges is displayed on our website.</p>
+      </div>
+      <div class="seva-badges reveal">
+        <div class="seva-badge"><span class="si">🔒</span> SSL Secured</div>
+        <div class="seva-badge"><span class="si">✓</span> No Hidden Costs</div>
+        <div class="seva-badge"><span class="si">⭐</span> 5.0 Verified Rating</div>
+        <div class="seva-badge"><span class="si">🏛</span> MP Tourism Reg.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="stats-sec">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-num" data-target="1" data-suffix="+ Month">0</div>
+        <div class="stat-lbl">Serving Since 2026 · Years of Trust</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num" data-target="100" data-suffix="+">0</div>
+        <div class="stat-lbl">Happy Pilgrims Served</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num" data-target="5" data-suffix=".0 ⭐">0</div>
+        <div class="stat-lbl">Google Rating · 10+ Reviews</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num" data-target="25" data-suffix="%">0</div>
+        <div class="stat-lbl">Would Recommend to Family</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-warm">
+  <div class="container">
+    <div class="test-head reveal">
+      <p class="eyebrow">Pilgrim Stories</p>
+      <h2 class="sec-title">Divine Blessings, Happy Hearts 🙏</h2>
+      <div class="test-meta">
+        <span>98% Would Recommend</span>
+        <span>100+ Happy Pilgrims</span>
+        <span>Verified Google Reviews</span>
+      </div>
+    </div>
+    <div class="test-slider reveal">
+      <div class="test-track" id="testTrack">
+        <div class="test-card">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-text">"First time visiting Ujjain all alone — the Explore Ujjain team guided me by the hand through the entire Darshan. They had my Bhasma Aarti booked 10 days in advance. What a wonderful experience of Baba Mahakal!"</p>
+          <div class="test-author">
+            <div class="test-avatar">R</div>
+            <div>
+              <div class="test-name">Ramesh Sharma</div>
+              <div class="test-loc">Ahmedabad, Gujarat · 2026</div>
+            </div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-text">"We were a group of 20, including senior citizens who needed wheelchairs. Their team handled everything flawlessly. Battery cars, VIP darshan, without standing in queues. My mother said, 'Son, these people are wonderful.' Thank you so much!"</p>
+          <div class="test-author">
+            <div class="test-avatar">P</div>
+            <div>
+              <div class="test-name">Priya Mehta</div>
+              <div class="test-loc">Pune, Maharashtra · 2026</div>
+            </div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-text">"I am an NRI, visiting from America. Everything was pre-planned — hotel, transport, darshan, and the Rudrabhishek sankalp. Even my brother in Canada orders online Prasad through them. The website built a strong trust factor early on."</p>
+          <div class="test-author">
+            <div class="test-avatar">A</div>
+            <div>
+              <div class="test-name">Anand Patel</div>
+              <div class="test-loc">New Jersey, USA · 2026</div>
+            </div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-text">"Came to Ujjain for Kaal Sarp Dosh puja. Explore Ujjain's team arranged the most suitable auspicious time and priest. No extra commission was charged. I also subscribed to their monthly Prasad delivery — Mahakal's blessings reach my home every month."</p>
+          <div class="test-author">
+            <div class="test-avatar">S</div>
+            <div>
+              <div class="test-name">Sunita Devi</div>
+              <div class="test-loc">Indore, MP · 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots" id="sliderDots"></div>
+  </div>
+</section>
+
+<section class="sec" id="travel">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Pilgrim Assistance</p>
+      <h2 class="sec-title">How to Reach Ujjain?</h2>
+      <p class="sec-sub">From Indore airport or any major city — our team arranges everything from pickup to Darshan.</p>
+    </div>
+    <div class="travel-grid">
+      <div class="travel-card reveal">
+        <div class="icon-img-box" style="margin-bottom:15px;"><img src="assets/icon-flight.jpg" alt="Flight"></div>
+        <h3>By Flight</h3>
+        <p>Nearest airport: <strong>Devi Ahilya Bai Holkar Airport, Indore</strong> (approx 55 km · 1.5 hrs). Direct AC cabs available from airport. We arrange pickup at INR 1,299 one-way.</p>
+      </div>
+      <div class="travel-card reveal">
+        <div class="icon-img-box" style="margin-bottom:15px;"><img src="assets/icon-train.jpg" alt="Train"></div>
+        <h3>By Train</h3>
+        <p><strong>Ujjain Junction (UJN)</strong> is well-connected to Delhi, Mumbai, Ahmedabad, Hyderabad &amp; Bhopal. Station to temple: 10 minutes. We provide station pickup.</p>
+      </div>
+      <div class="travel-card reveal">
+        <div class="icon-img-box" style="margin-bottom:15px;"><img src="assets/icon-bus.jpg" alt="Bus"></div>
+        <h3>By Road</h3>
+        <p>Volvo buses &amp; AC cabs from <strong>Indore (55km) · Bhopal (185km) · Ahmedabad (450km)</strong>. Direct route to Mahakal Chowk via NH3. We also arrange self-drive cab rentals.</p>
+      </div>
+    </div>
+    <div class="reveal" style="margin-top:var(--sp-xl);background:rgba(196,91,26,.06);border:1.5px solid rgba(196,91,26,.2);border-radius:var(--r-lg);padding:var(--sp-xl);display:flex;gap:var(--sp-lg);align-items:flex-start;flex-wrap:wrap">
+      <div class="icon-img-box" style="width:80px;height:80px;"><img src="assets/icon-wheelchair.jpg" alt="Elders"></div>
+      <div style="flex:1;min-width:200px">
+        <h3 style="font-family:var(--font-serif);font-size:1.2rem;font-weight:600;margin-bottom:var(--sp-sm)">Senior Citizens &amp; Differently-Abled Assistance</h3>
+        <p style="font-size:.9rem;color:var(--text-muted);line-height:1.7">Wheelchair arrangements, battery-operated vehicles inside the temple complex, medical kits on all tours, and slow-paced itineraries — we ensure that every devotee, under any condition, can peacefully have Baba Mahakal's darshan.</p>
+      </div>
+      <a href="https://wa.me/6263735651?text=Jai%20Mahakal!%20I%20require%20wheelchair%20assistance." target="_blank" class="btn btn-saffron" style="align-self:center">💬 Request Assistance</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-warm" id="faq">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="faq-sidebar reveal">
+        <p class="eyebrow">Pilgrim's Handbook</p>
+        <h2>Darshan &amp; Yatra Guide</h2>
+        <p>Visiting Ujjain for the first time? Read the answers to common questions — or message us directly on WhatsApp.</p>
+        <a href="https://wa.me/6263735651" target="_blank" class="btn btn-saffron" style="margin-top:var(--sp-md)">💬 Ask an Expert</a>
+        <div style="margin-top:var(--sp-lg);padding:var(--sp-lg);background:var(--bg-deep);border-radius:var(--r-md);border:1px dashed var(--saffron)">
+          <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:var(--sp-md)">For senior citizens — no need to fill out forms:</p>
+          <a href="https://wa.me/6263735651?text=Jai%20Mahakal!%20I%20want%20to%20visit%20Ujjain.%20Please%20assist%20me." target="_blank" class="btn btn-saffron" style="width:100%;justify-content:center">📞 Your Yatra, Just One Call Away</a>
+        </div>
+      </div>
+      <div class="faq-list reveal">
+        <div class="accord-item">
+          <button class="accord-hdr">What is the dress code for Mahakaleshwar? <span class="accord-arr">▼</span></button>
+          <div class="accord-body"><div class="accord-inner">Traditional attire is recommended for Mahakaleshwar. <strong>For Bhasma Aarti</strong> — Men: Dhoti-Kurta or Pancha (Dhoti is required for offering water). Women: Saree or Suit is mandatory. Western clothes are completely strictly prohibited for Bhasma Aarti.</div></div>
+        </div>
+        <div class="accord-item">
+          <button class="accord-hdr">How do I book the Bhasma Aarti? <span class="accord-arr">▼</span></button>
+          <div class="accord-body"><div class="accord-inner">Bhasma Aarti bookings are done on the official shrine board website (shrimahakaleshwar.com) — slots typically open 30 days in advance. Our team provides complete assistance in confirming your slot, reporting times, dress codes, and overall guidance.</div></div>
+        </div>
+        <div class="accord-item">
+          <button class="accord-hdr">What are the general Darshan timings? <span class="accord-arr">▼</span></button>
+          <div class="accord-body"><div class="accord-inner"><strong>Bhasma Aarti:</strong> 4:00 AM (Reporting: 2:30 AM) · <strong>VIP Darshan:</strong> 7:00 AM – 10:30 AM · <strong>General Darshan:</strong> 4:00 AM – 11:00 PM · Special darshan is available on Tuesdays. Mahakal Mahalok remains open 24 hours.</div></div>
+        </div>
+        <div class="accord-item">
+          <button class="accord-hdr">How long does Prasad delivery take? <span class="accord-arr">▼</span></button>
+          <div class="accord-body"><div class="accord-inner">Delivery takes <strong>5–7 working days</strong> after dispatch from Ujjain. For monthly subscriptions, dispatch occurs between the 1st and 5th of every month. Tracking numbers are provided via SMS. Packaging is temperature-controlled and ritually pure.</div></div>
+        </div>
+        <div class="accord-item">
+          <button class="accord-hdr">When should I perform Kaal Sarp Dosh or Mangal Dosh puja? <span class="accord-arr">▼</span></button>
+          <div class="accord-body"><div class="accord-inner">Kaal Sarp Dosh puja is considered highly auspicious around Nag Panchami, but can also be performed on Shivratri and Mondays. For Mangal Dosh, Tuesday is the best day. Our team will suggest the ideal time based on your astrological chart.</div></div>
+        </div>
+        <div class="accord-item">
+          <button class="accord-hdr">Do I get a refund if I cancel my trip? <span class="accord-arr">▼</span></button>
+          <div class="accord-body"><div class="accord-inner"><strong>100% refund</strong> if canceled 7 days prior. 3–6 days prior: 50% refund. Less than 48 hours: no refund, but rescheduling is free. For Prasad delivery: full refund if canceled before dispatch.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Travel &amp; Insights</p>
+      <h2 class="sec-title">Pilgrim Guides &amp; Stories</h2>
+      <p class="sec-sub">Read these guides before visiting Ujjain — containing helpful tips for everyone, from NRIs to senior citizens.</p>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card reveal">
+        <div class="blog-img"><img src="assets/blog-bhasma-aarti.jpg" alt="Bhasma Aarti" class="real-img"></div>
+        <div class="blog-body">
+          <span class="blog-tag">Bhasma Aarti Guide</span>
+          <h3 class="blog-title">Complete Guide to Booking Mahakaleshwar Bhasma Aarti — Step by Step</h3>
+          <a href="#faq" class="blog-read">Read Guide →</a>
+        </div>
+      </div>
+      <div class="blog-card reveal">
+        <div class="blog-img"><img src="assets/blog-nri-guide.jpg" alt="NRI Guide" class="real-img"></div>
+        <div class="blog-body">
+          <span class="blog-tag">NRI Special</span>
+          <h3 class="blog-title">NRI Devotees Guide to Ujjain &amp; Omkareshwar Yatra — Everything You Need</h3>
+          <a href="#contact" class="blog-read">Read Guide →</a>
+        </div>
+      </div>
+      <div class="blog-card reveal">
+        <div class="blog-img"><img src="assets/blog-malwa-food.jpg" alt="Indian Food" class="real-img"></div>
+        <div class="blog-body">
+          <span class="blog-tag">Food &amp; Culture</span>
+          <h3 class="blog-title">Best Places to Eat Authentic Malwa Food in Ujjain — From Dal Baati to Poha</h3>
+          <a href="#contact" class="blog-read">Read Guide →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-sec" id="contact">
+  <div class="container">
+    <div class="quote-inner">
+      <div class="quote-info reveal">
+        <p class="eyebrow">Free Consultation</p>
+        <h2>Get Your Free Yatra Quote</h2>
+        <p>Plan your journey to Ujjain — our experts will prepare a customized itinerary according to your budget, dates, and specific requirements.</p>
+        <div class="quote-benefits">
+          <div class="q-benefit"><span class="q-chk">✓</span> No hidden costs or agent fees</div>
+          <div class="q-benefit"><span class="q-chk">✓</span> Reply within 1 hours (WhatsApp)</div>
+          <div class="q-benefit"><span class="q-chk">✓</span> Free Bhasma Aarti booking guidance</div>
+          <div class="q-benefit"><span class="q-chk">✓</span> 100% customisable packages</div>
+        </div>
+      </div>
+      <div class="form-wrap reveal">
+        <div id="quoteForm">
+          <div class="step-prog" id="stepProg">
+            <div class="sprog done" id="p1"></div>
+            <div class="sprog" id="p2"></div>
+            <div class="sprog" id="p3"></div>
+          </div>
+          <div class="form-step active" id="step1">
+            <div class="step-title">Your Details</div>
+            <div class="step-sub">Step 1 of 3 · Basic information</div>
+            <div class="f-group">
+              <label>Your Full Name *</label>
+              <input class="f-ctrl" type="text" id="f-name" placeholder="Full Name" required>
+            </div>
+            <div class="f-row">
+              <div class="f-group">
+                <label>📱 Phone (WhatsApp) *</label>
+                <input class="f-ctrl" type="tel" id="f-phone" placeholder="+91 000000 00000" required>
+              </div>
+              <div class="f-group">
+                <label>Email Address</label>
+                <input class="f-ctrl" type="email" id="f-email" placeholder="name@email.com">
+              </div>
+            </div>
+            <div class="f-actions">
+              <button class="btn-next" onclick="nextStep(2)">Next Step →</button>
+            </div>
+          </div>
+          <div class="form-step" id="step2">
+            <div class="step-title">Trip Information</div>
+            <div class="step-sub">Step 2 of 3 · Trip details</div>
+            <div class="f-group">
+              <label>Destination of Interest</label>
+              <select class="f-ctrl" id="f-dest">
+                <option value="">-- Select --</option>
+                <option>Mahakal Bhasma Aarti + Local Darshan</option>
+                <option>Jyotirlinga Yatra (Ujjain + Omkareshwar)</option>
+                <option>Malwa Darshan (4 Days)</option>
+                <option>Senior Citizen Special Package</option>
+                <option>Only Prasad Delivery / Online Puja</option>
+                <option>Custom Package</option>
+              </select>
+            </div>
+            <div class="f-row">
+              <div class="f-group">
+                <label>Preferred Travel Date</label>
+                <input class="f-ctrl" type="date" id="f-date">
+              </div>
+              <div class="f-group">
+                <label>Duration (Days)</label>
+                <select class="f-ctrl" id="f-dur">
+                  <option>1–2 Days</option>
+                  <option>2–3 Days</option>
+                  <option>3–4 Days</option>
+                  <option>5+ Days</option>
+                </select>
+              </div>
+            </div>
+            <div class="f-actions">
+              <button class="btn-back" onclick="nextStep(1)">← Go Back</button>
+              <button class="btn-next" onclick="nextStep(3)">Next Step →</button>
+            </div>
+          </div>
+          <div class="form-step" id="step3">
+            <div class="step-title">Special Requirements</div>
+            <div class="step-sub">Step 3 of 3 · Final details</div>
+            <div class="f-row">
+              <div class="f-group">
+                <label>Adults</label>
+                <input class="f-ctrl" type="number" id="f-adults" placeholder="2" min="1">
+              </div>
+              <div class="f-group">
+                <label>Children</label>
+                <input class="f-ctrl" type="number" id="f-children" placeholder="0" min="0">
+              </div>
+            </div>
+            <div class="f-group">
+              <label>Specific Requests</label>
+              <textarea class="f-ctrl" id="f-req" rows="3" placeholder="VIP darshan, wheelchair access, special diet, NRI, Bhasma Aarti booking help..."></textarea>
+            </div>
+            <div class="f-actions">
+              <button class="btn-back" onclick="nextStep(2)">← Go Back</button>
+              <button class="btn-submit" onclick="submitQuote()">🙏 Get Free Quote →</button>
+            </div>
+          </div>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <div class="fs-icon">🙏</div>
+          <h3>Jai Mahakal!</h3>
+          <p>We have received your enquiry. Our team will contact you on <strong>WhatsApp within 2 hours</strong> and share a personalized itinerary.</p>
+          <p style="margin-top:var(--sp-md);color:var(--saffron);font-weight:600">Order ID: #<span id="orderId"></span></p>
+          <a href="https://wa.me/6263735651" target="_blank" class="btn btn-saffron" style="margin-top:var(--sp-lg)">💬 Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">🕉</div>
+          <div class="logo-text">
+            <span class="logo-name">Explore Ujjain</span>
+            <span class="logo-sub">Selfless Pilgrimage Service</span>
+          </div>
+        </div>
+        <p class="footer-desc">Serving the devotees of Baba Mahakal is our primary duty. Expect transparent, premium, and selfless service across all Prasad deliveries, Pujas, and Yatras.</p>
+        <p class="footer-addr">🛕 Near Mahakal Mandir, Mahakal Chowk,<br>Ujjain – 456006, Madhya Pradesh, India<br>📞 +91 62637 35651 · 📧 seva@ujjainsevaPortal.in</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="#packages">Tour Packages</a>
+          <a href="#prasad">Order Prasad</a>
+          <a href="#pujas">Book Pujas</a>
+          <a href="#places">Sacred Places</a>
+          <a href="#faq">FAQ &amp; Guide</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Service Types</h4>
+        <div class="footer-links">
+          <a href="#pujas">Bhasma Aarti Help</a>
+          <a href="#pujas">Rudrabhishek</a>
+          <a href="#pujas">Kaal Sarp Dosh</a>
+          <a href="#pujas">Mangal Dosh Puja</a>
+          <a href="#contact">Custom Puja</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Policies</h4>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Refund Policy (Prasad)</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Cancellation Policy</a>
+        </div>
+        <div style="margin-top:var(--sp-lg)">
+          <h4>Follow &amp; Share</h4>
+          <div class="footer-links">
+            <a href="#">📘 Facebook</a>
+            <a href="#">📸 Instagram</a>
+            <a href="#">▶️ YouTube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Explore Ujjain · Jai Shri Mahakal 🕉️ · Designed for Baba's Devotees by Kuldeep Norang 🧡</span>
+      <span>MP Help Line Number · 9238806606 </span>
+    </div>
+  </div>
+</footer>
+
+<div class="floating">
+  <button class="float-btn f-pr" onclick="openPrasadModal()">
+    <span class="float-icon">🪷</span>
+    <span class="float-label">Order Prasad</span>
+  </button>
+  <a href="https://wa.me/6263735651?text=Jai%20Mahakal!%20I%20want%20to%20visit%20Ujjain." target="_blank" class="float-btn f-wa">
+    <span class="float-icon">💬</span>
+    <span class="float-label">WhatsApp</span>
+  </a>
+</div>
+
+<div class="sticky-trust" id="stickyTrust">
+  <div class="sti"><span class="si">✓</span> 100% Selfless Service</div>
+  <div class="sti"><span class="si">🔒</span> Secure Payments</div>
+  <div class="sti"><span class="si">⭐</span> 5.0 Google Rating</div>
+  <div class="sti"><span class="si">📦</span> 50K+ Happy Pilgrims</div>
+</div>
+
+<div class="modal-overlay" id="prasadModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closePrasadModal()">✕</button>
+    <p class="eyebrow">Prasad Service</p>
+    <h2>Take the Prasad Sankalp 🙏</h2>
+    <p class="modal-sub">Order Baba Mahakal's sacred prasad directly to your home for yourself or your family.</p>
+    <div class="prasad-type-grid">
+      <div class="pt-opt active" onclick="selectPrasad(this)">
+        <div class="pt-name">Mahakal Laddu</div>
+        <div class="pt-price">₹251 + Delivery</div>
+      </div>
+      <div class="pt-opt" onclick="selectPrasad(this)">
+        <div class="pt-name">Bhasmi + Laddu Combo</div>
+        <div class="pt-price">₹351 + Delivery</div>
+      </div>
+      <div class="pt-opt" onclick="selectPrasad(this)">
+        <div class="pt-name">Monthly Subscription</div>
+        <div class="pt-price">₹299/month</div>
+      </div>
+      <div class="pt-opt" onclick="selectPrasad(this)">
+        <div class="pt-name">Premium Gift Box</div>
+        <div class="pt-price">₹599 + Delivery</div>
+      </div>
+    </div>
+    <div class="f-group">
+      <label>Your Name *</label>
+      <input class="f-ctrl" id="pm-name" type="text" placeholder="Name (For the Sankalp)">
+    </div>
+    <div class="f-row">
+      <div class="f-group">
+        <label>Phone Number *</label>
+        <input class="f-ctrl" id="pm-phone" type="tel" placeholder="+91 98765 43210">
+      </div>
+      <div class="f-group">
+        <label>Pincode / Zip Code *</label>
+        <input class="f-ctrl" id="pm-pin" type="text" placeholder="400001">
+      </div>
+    </div>
+    <div class="f-group">
+      <label>Complete Address *</label>
+      <textarea class="f-ctrl" id="pm-addr" rows="2" placeholder="House/Flat number, Colony, City, State..."></textarea>
+    </div>
+    <button class="btn btn-saffron" style="width:100%;justify-content:center;padding:14px;font-size:.95rem;margin-top:var(--sp-md)" onclick="submitPrasadOrder()">
+      🙏 Proceed with Prasad Sankalp
+    </button>
+    <div id="prasadOrderSuccess" style="display:none;text-align:center;padding:var(--sp-lg) 0">
+      <div style="font-size:2.5rem">🙏</div>
+      <h3 style="font-family:var(--font-serif);margin:var(--sp-md) 0 var(--sp-sm)">Jai Mahakal!</h3>
+      <p style="font-size:.9rem;color:var(--text-muted)">Your Prasad Sankalp is confirmed. Order ID: <strong id="pOrderId"></strong><br>Delivery will be completed in 5–7 days. You can track it via SMS.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  /* ── 1. PREMIUM SMOOTH SCROLL (LENIS) ── */
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), 
+    direction: 'vertical',
+    gestureDirection: 'vertical',
+    smooth: true,
+    mouseMultiplier: 1,
+    smoothTouch: false,
+    touchMultiplier: 2,
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+
+  /* ── 2. PREMIUM SCROLL ANIMATIONS (GSAP) ── */
+  document.addEventListener("DOMContentLoaded", (event) => {
+    gsap.registerPlugin(ScrollTrigger);
+    
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add((time)=>{ lenis.raf(time * 1000) });
+    gsap.ticker.lagSmoothing(0, 0);
+
+    // Hero Section Parallax 
+    gsap.to(".hero-bg", {
+      yPercent: 20,
+      ease: "none",
+      scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true }
+    });
+
+    // Reveal All Sections (Replaced IntersectionObserver with GSAP)
+    gsap.utils.toArray('.reveal').forEach(elem => {
+      gsap.fromTo(elem, 
+        { autoAlpha: 0, y: 40 }, 
+        { 
+          scrollTrigger: { trigger: elem, start: "top 85%" }, 
+          autoAlpha: 1, 
+          y: 0, 
+          duration: 1, 
+          ease: "power3.out" 
+        }
+      );
+    });
+  });
+
+/* ── ORIGINAL FUNCTIONAL SCRIPTS ── */
+
+/* ── MOBILE NAV ── */
+function toggleMobNav(open) {
+  const nav = document.getElementById('mobNav');
+  nav.style.display = 'flex';
+  setTimeout(() => { open ? nav.classList.add('open') : nav.classList.remove('open'); }, 10);
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+
+/* ── PACKAGE FILTER TABS ── */
+document.querySelectorAll('.ftab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.ftab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const filter = tab.dataset.filter;
+    document.querySelectorAll('.pkg-card').forEach(card => {
+      card.style.display = (filter === 'all' || card.dataset.category === filter) ? 'flex' : 'none';
+      card.style.flexDirection = 'column';
+    });
+  });
+});
+
+/* ── FAQ ACCORDION ── */
+document.querySelectorAll('.accord-hdr').forEach(hdr => {
+  hdr.addEventListener('click', () => {
+    const item = hdr.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.accord-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
+/* ── TESTIMONIALS SLIDER ── */
+const track = document.getElementById('testTrack');
+const dotsContainer = document.getElementById('sliderDots');
+const cards = track.querySelectorAll('.test-card');
+let totalCards = cards.length;
+let currentSlide = 0;
+let perView = window.innerWidth > 768 ? 3 : 1;
+
+for (let i = 0; i < totalCards; i++) {
+  const d = document.createElement('button');
+  d.className = 'sdot' + (i === 0 ? ' active' : '');
+  d.onclick = () => goToSlide(i);
+  dotsContainer.appendChild(d);
+}
+
+function goToSlide(n) {
+  const maxSlide = totalCards - perView;
+  currentSlide = Math.max(0, Math.min(n, maxSlide));
+  const cardW = cards[0].offsetWidth + 32;
+  track.style.transform = `translateX(-${currentSlide * cardW}px)`;
+  dotsContainer.querySelectorAll('.sdot').forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+}
+
+let autoSlide = setInterval(() => goToSlide(currentSlide + 1 > totalCards - perView ? 0 : currentSlide + 1), 5000);
+window.addEventListener('resize', () => {
+  perView = window.innerWidth > 768 ? 3 : 1;
+  goToSlide(0);
+});
+
+/* ── STATS COUNTER ── */
+function animCount(el) {
+  const target = parseFloat(el.dataset.target);
+  const suffix = el.dataset.suffix || '';
+  const isFloat = target % 1 !== 0;
+  const duration = 1800;
+  const step = target / (duration / 16);
+  let cur = 0;
+  const tick = () => {
+    cur = Math.min(cur + step, target);
+    const display = isFloat ? cur.toFixed(1) : Math.round(cur).toLocaleString('en-IN');
+    el.textContent = display + suffix;
+    if (cur < target) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+const statObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) { animCount(e.target); statObs.unobserve(e.target); } });
+}, { threshold: 0.5 });
+document.querySelectorAll('[data-target]').forEach(el => statObs.observe(el));
+
+/* ── MULTI-STEP FORM ── */
+let curStep = 1;
+function nextStep(step) {
+  if (step > curStep) {
+    const nameEl = document.getElementById('f-name');
+    const phoneEl = document.getElementById('f-phone');
+    if (curStep === 1 && (!nameEl.value.trim() || !phoneEl.value.trim())) {
+      alert('Name and Phone number are required. 🙏');
+      return;
+    }
+  }
+  document.querySelectorAll('.form-step').forEach(s => s.classList.remove('active'));
+  document.getElementById('step'+step)?.classList.add('active');
+  document.querySelectorAll('.sprog').forEach((p, i) => p.classList.toggle('done', i < step));
+  curStep = step;
+}
+
+async function submitQuote() {
+  const data = {
+    name: document.getElementById('f-name')?.value,
+    phone: document.getElementById('f-phone')?.value,
+    email: document.getElementById('f-email')?.value,
+    destination: document.getElementById('f-dest')?.value,
+    travel_date: document.getElementById('f-date')?.value,
+    duration: document.getElementById('f-dur')?.value,
+    adults: document.getElementById('f-adults')?.value,
+    children: document.getElementById('f-children')?.value,
+    requirements: document.getElementById('f-req')?.value
+  };
+
+  const orderId = 'LEAD-' + Date.now().toString().slice(-6);
+
+  try {
+    const res = await fetch('/api/quote', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    const result = await res.json();
+    if (result.success) {
+      document.getElementById('orderId').textContent = result.leadId || orderId;
+    } else {
+      document.getElementById('orderId').textContent = orderId;
+    }
+  } catch {
+    document.getElementById('orderId').textContent = orderId;
+  }
+
+  document.getElementById('quoteForm').style.display = 'none';
+  document.getElementById('formSuccess').classList.add('show');
+
+  setTimeout(() => {
+    const msg = `Jai Mahakal! 🙏 I am planning a Ujjain Yatra.\n\nName: ${data.name}\nPhone: ${data.phone}\nDestination: ${data.destination || 'Discuss'}\nDate: ${data.travel_date || 'Flexible'}\nAdults: ${data.adults || 2}`;
+    window.open(`https://wa.me/6263735651?text=${encodeURIComponent(msg)}`, '_blank');
+  }, 2000);
+}
+
+/* ── PRASAD MODAL ── */
+function openPrasadModal() {
+  document.getElementById('prasadModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closePrasadModal() {
+  document.getElementById('prasadModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('prasadModal').addEventListener('click', e => {
+  if (e.target === document.getElementById('prasadModal')) closePrasadModal();
+});
+function selectPrasad(el) {
+  document.querySelectorAll('.pt-opt').forEach(o => o.classList.remove('active'));
+  el.classList.add('active');
+}
+
+async function submitPrasadOrder() {
+  const name = document.getElementById('pm-name').value.trim();
+  const phone = document.getElementById('pm-phone').value.trim();
+  const addr = document.getElementById('pm-addr').value.trim();
+  const pin = document.getElementById('pm-pin').value.trim();
+
+  if (!name || !phone || !addr || !pin) {
+    alert('Name, Phone, Address, and Pincode are mandatory. 🙏');
+    return;
+  }
+
+  const prasadType = document.querySelector('.pt-opt.active .pt-name')?.textContent || 'Mahakal Laddu';
+  const orderId = 'PRD-' + Date.now().toString().slice(-6);
+
+  try {
+    const res = await fetch('/api/prasad/order', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, phone, address: addr, pincode: pin, prasad_type: prasadType })
+    });
+    const result = await res.json();
+    document.getElementById('pOrderId').textContent = result.orderId || orderId;
+  } catch {
+    document.getElementById('pOrderId').textContent = orderId;
+  }
+
+  document.querySelector('.prasad-type-grid').style.display = 'none';
+  document.querySelectorAll('#prasadModal .f-group, #prasadModal .f-row').forEach(el => el.style.display = 'none');
+  document.querySelector('#prasadModal .modal-sub').style.display = 'none';
+  document.querySelector('#prasadModal button[onclick="submitPrasadOrder()"]').style.display = 'none';
+  document.getElementById('prasadOrderSuccess').style.display = 'block';
+}
+
+/* ── ADD TO YATRA ── */
+let yatraItems = [];
+document.querySelectorAll('.btn-yatra').forEach((btn, i) => {
+  const placeNames = [
+    'Mahakaleshwar Jyotirlinga','Mahakal Mahalok','Kal Bhairav Mandir',
+    'Harsiddhi Mata Shaktipeeth','Ram Ghat (Kshipra Aarti)','Sandipani Ashram',
+    'Mangalnath Temple','Chintaman Ganesh Temple','Jantar Mantar (Vedh Shala)'
+  ];
+  btn.addEventListener('click', () => {
+    const place = placeNames[i] || 'Temple';
+    if (!yatraItems.includes(place)) {
+      yatraItems.push(place);
+      btn.textContent = '✓ Added!';
+      btn.classList.add('added');
+    }
+    const summary = document.getElementById('yatra-summary');
+    const list = document.getElementById('yatra-list');
+    if (yatraItems.length > 0) {
+      summary.style.display = 'block';
+      summary.classList.add('visible');
+      list.textContent = yatraItems.join(' → ');
+    }
+  });
+});
+
+/* ── STICKY TRUST BAR ── */
+window.addEventListener('scroll', () => {
+  const bar = document.getElementById('stickyTrust');
+  if (window.scrollY > 500) bar?.classList.add('show');
+  else bar?.classList.remove('show');
+}, { passive: true });
+
+/* ── PUJA MODAL REDIRECT ── */
+function openQuoteModal(type) {
+  document.getElementById('f-dest').value = type;
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  nextStep(1);
+}
+
+/* ── SIMULATED LIVE WEATHER ── */
+const temps = ['32°C · Partly Cloudy', '33°C · Sunny', '34°C · Partly Cloudy', '31°C · Overcast'];
+document.getElementById('weather-val').textContent = temps[new Date().getHours() % temps.length];
+</script>
+</body>
+</html>
